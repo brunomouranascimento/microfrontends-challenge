@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --color-background: var(--background-color)
+}

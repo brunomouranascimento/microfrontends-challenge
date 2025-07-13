@@ -1,0 +1,57 @@
+<div class="form-wrapper">
+  <mat-card class="card">
+    <p>Cadastro de usuário</p>
+    <mat-card-content>
+      <form [formGroup]="form" novalidate autocomplete="off">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Nome</mat-label>
+          <input
+            autofocus
+            matInput
+            (keydown.enter)="submit()"
+            formControlName="name"
+            maxlength="30"
+          />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput (keydown.enter)="submit()" formControlName="email" />
+        </mat-form-field>
+
+        <div class="button-container">
+          <button
+            mat-raised-button
+            color="primary"
+            type="reset"
+            (click)="resetForm()"
+            [disabled]="!form.get('name')?.value && !form.get('email')?.value"
+          >
+            Limpar
+          </button>
+          <button
+            mat-raised-button
+            color="primary"
+            type="reset"
+            (click)="submit()"
+            [disabled]="form.invalid"
+          >
+            Salvar
+          </button>
+        </div>
+        <div class="user-list-button-wrapper">
+          <button
+            (click)="goToUsersList()"
+            mat-raised-button
+            type="button"
+            color="primary"
+            class="user-list"
+          >
+            Usuários cadastrados
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+

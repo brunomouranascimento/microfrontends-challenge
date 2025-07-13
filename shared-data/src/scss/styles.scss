@@ -1,0 +1,69 @@
+// @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: indigo;
+}
+
+.mat-mdc-snack-bar-container {
+  &.info-snackbar {
+    font-family: var(--font-family);
+    --mdc-snackbar-container-color: #2196f3;
+    --mat-mdc-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+    --mdc-snackbar-action-color: #fff;
+
+    .mdc-snackbar__label {
+      font-size: 16px;
+      font-family: var(--font-family);
+    }
+
+    .mdc-button__label {
+      color: #fff
+    }
+  }
+
+  &.error-snackbar {
+    font-family: var(--font-family);
+    --mdc-snackbar-container-color: #f44336;
+    --mat-mdc-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+    --mdc-snackbar-action-color: #fff;
+
+    .mdc-snackbar__label {
+      font-size: 16px;
+      font-family: var(--font-family);
+    }
+
+    .mdc-button__label {
+      color: #fff
+    }
+
+  }
+
+  &.success-snackbar {
+    font-family: var(--font-family);
+    --mdc-snackbar-container-color: #4caf50;
+    --mat-mdc-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+    --mdc-snackbar-action-color: #fff;
+
+    .mdc-snackbar__label {
+      font-size: 16px;
+      font-family: var(--font-family);
+    }
+
+    .mdc-button__label {
+      color: #fff
+    }
+
+  }
+}

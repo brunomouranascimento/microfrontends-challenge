@@ -1,0 +1,103 @@
+.list-wrapper {
+  padding: 16px;
+  margin: auto;
+  max-width: 100%;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    color: #fff;
+  }
+
+  .user-info-wrapper {
+    display: flex;
+    align-items: baseline;
+    border-bottom: var(--border);
+    margin-bottom: 10px;
+
+  }
+
+  button {
+    margin-top: 12px;
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .back-button {
+    margin-top: 25px;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.user-card {
+  text-align: left;
+  padding: 12px;
+  background-color: #f8f8f8;
+  border-left: 8px solid var(--primary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  .user-id {
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 6px;
+  }
+
+  .user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--secondary);
+    margin-left: 5px;
+  }
+
+  .user-email {
+    font-size: 0.95rem;
+    color: #555;
+  }
+}
+
+@media (min-width: 600px) {
+  .list-wrapper {
+    max-width: 600px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+
+  .user-card {
+    padding: 16px;
+
+    .user-id {
+      font-size: 0.85rem;
+    }
+
+    .user-name {
+      font-size: 1.2rem;
+    }
+
+    .user-email {
+      font-size: 1rem;
+    }
+  }
+}

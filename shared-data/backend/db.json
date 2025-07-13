@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "João",
+      "email": "joao@email.com"
+    },
+    {
+      "id": 2,
+      "name": "Maria",
+      "email": "maria@email.com"
+    },
+    {
+      "id": 3,
+      "name": "BRUNO MOURA NASCIMENTO COM UM ",
+      "email": "bruno.bmn@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Bruno Nascimento",
+      "email": "bruno.bmn@icloud.com"
+    }
+  ]
+}
