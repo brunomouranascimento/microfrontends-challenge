@@ -1,5 +1,4 @@
 @use "sass:meta";
-// @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 @include meta.load-css('reset');
 @include meta.load-css('variables');
