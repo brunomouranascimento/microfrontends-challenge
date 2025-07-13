@@ -55,7 +55,6 @@ Para executar cada projeto individualmente, ainda na raiz do projeto:
 ### 🔹 Shell
 
 ```bash
-
 ng serve shell
 ```
 
